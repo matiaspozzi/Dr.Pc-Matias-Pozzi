@@ -73,7 +73,6 @@ footer nav ul li a {
 .backIndex {
     display: flex;
     flex-direction: row;
-    align-content:space-around; /*no puedo mover*/
     color: white;
     text-decoration: none;
     grid-area: volverindex;
@@ -274,7 +273,9 @@ body main h4 {
 
 .tituloGrande{
     font-size: 4rem;
+
 };
+
 
 /* PHONE MEDIA and TABLET MEDIA */
 
