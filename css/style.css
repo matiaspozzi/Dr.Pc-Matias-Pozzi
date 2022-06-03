@@ -53,10 +53,10 @@ main li {
     color: white;
 }
 
-main iframe {
-   padding: 0px 0px 200px 0px;
 
-}
+   
+
+
 
 .aplicandoGrids2 iframe {
     grid-area: mapamedio;
@@ -101,6 +101,7 @@ footer nav ul li a {
 .aplicandoGrids2{
     padding: 0 4rem;
     display: grid;
+    box-sizing: 3rem;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -124,7 +125,7 @@ footer nav ul li a {
 
 .videoDerecha {
     grid-area: videoaladerecha;
-
+     
 }
 
 .imagenIzquierda {
@@ -276,6 +277,56 @@ body main h4 {
 
 };
 
+.navBar-modificada{
+    color:white;
+
+}
+
+.nav-linkable{
+    color: white;
+    text-decoration: none;
+
+}
+
+.navToggleColor{
+    color: white;
+}
+
+.nuevaNav{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: white ;
+}
+
+.container-fluid{
+    width: 100%
+    ;
+
+}
+
+footer ul{
+    color: white;
+}
+
+.navBarTogglerIcon {
+    color: white;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+
+}
+
+.togglerArreglado{
+        color: white;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath stroke='rgba(255.255.255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+ }
+
 
 /* PHONE MEDIA and TABLET MEDIA */
 
@@ -314,3 +365,10 @@ body main h4 {
     }
   
 }
+
+
+
+.togglerArreglado {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
