@@ -1,0 +1,27 @@
+{
+  "name": "proyectosass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiaspozzi/Dr.Pc-Matias-Pozzi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiaspozzi/Dr.Pc-Matias-Pozzi/issues"
+  },
+  "homepage": "https://github.com/matiaspozzi/Dr.Pc-Matias-Pozzi#readme",
+  "dependencies": {
+    "sass": "^1.52.2"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
+  
