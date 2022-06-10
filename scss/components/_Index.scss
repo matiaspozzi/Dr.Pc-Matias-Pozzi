@@ -1,12 +1,108 @@
-body{
-    background-color: $bg-image;
-    h1{
-        color: red;
-        text-align: center;
+body {
+    background-color: $bg-body;
+    background-image: $bg-image;
+    color: white;
+            .tituloGrande{
+                @include ordenPag;
+                font-family: $FontFam;
+                font-size: 4rem;
+            }
+}
+
+h3{
+    @include ordenPag;
+    font-family: $FontFam2;
+    padding: 30px 30px 30px 30px;
+     
+
+}   
+
+p{
+    @include ordenPag;
+    font-family: $FontFam2;
+}
+
+main{
+    font-family: $FontFam2;
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+            list-style-type: none;;
+        }
+    }
+    
+}
+
+.textoAlCostado{
+    grid-area: textoderecha;
+}
+.textoIzquierda{
+    grid-area:textoizquierda
+}
+.videoDerecha{
+    grid-area:videoaladerecha;
+}
+.imagenIzquierda{
+    grid-area: imagenalaizquierda;
+}
+
+
+.aplicandoGrids{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 5%;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+        "imagenalaizquierda textoderecha"
+        "textoizquierda videoaladerecha"
+    ;
+}
+
+footer{
+    font-family: $FontFam2;
+}
+
+.navBar-modificada{
+    color: $white;
+}
+
+.nuevaNav{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    text-decoration:none;
+    color:$white;
+
+}
+.togglerArreglado{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath stroke='rgba(250.245.205)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+@media screen and (max-width: 700px) {
+   
+    .bodyContacto{
+        padding: 0px 40px 40px 40px;
+    }
+    
+    .contentOfContent{
+        grid-template-columns: 1fr;
+
     }
 
+    .aplicandoGrids{
+        padding: 0px;
+        margin-top: 0px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "textoizquierda"
+        "imagenalaizquierda"
+        "videoaladerecha"
+        "textoderecha";
+    }
 
-
-
-
+    .togglerArreglado{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath stroke='rgba(250.245.205)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 }
