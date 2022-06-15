@@ -54,6 +54,22 @@ main ul li {
   grid-area: imagenalaizquierda;
 }
 
+.facebook {
+  grid-area: displayfacebook;
+}
+
+.instagram {
+  grid-area: displayinstagram;
+}
+
+.twitter {
+  grid-area: displaytwitter;
+}
+
+.subTitulo {
+  grid-area: texto;
+}
+
 .aplicandoGrids {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -65,7 +81,18 @@ main ul li {
 }
 
 footer {
+  box-shadow: black;
   font-family: "Montserrat", sans-serif;
+  border-top: 2px solid black;
+  padding: 0;
+}
+footer div {
+  padding: 20px;
+}
+footer div .redesSoc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .navBar-modificada {
@@ -83,7 +110,7 @@ footer {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath stroke='rgba(250.245.205)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 860px) {
   .bodyContacto {
     padding: 0px 40px 40px 40px;
   }
@@ -97,6 +124,16 @@ footer {
     margin-top: 0px;
     grid-template-columns: 1fr;
     grid-template-areas: "textoizquierda" "imagenalaizquierda" "videoaladerecha" "textoderecha";
+  }
+
+  /*grids del footer index*/
+  .subTitulo {
+    padding: 0px;
+    margin-top: 0px;
+    grid-column-gap: 5px;
+    grid-row-gap: 2px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "texto" "displayfacebook" "displayinstagram" "displaytwitter";
   }
 
   .togglerArreglado {
