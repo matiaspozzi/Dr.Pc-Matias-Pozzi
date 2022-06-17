@@ -1,3 +1,9 @@
-@import"./base/mixin.scss";
-@import"./base/variables.scss";
-@import"./components/index.scss";
+
+@import"./base/__mixin";
+@import"./base/__variables";
+@import"./base/__maps";
+@import"./components/__contacto";
+@import"./components/__navbar";
+@import"./components/__vistacelular";
+@import"./components/__dondeencontrarnos";
+@import"./components/__index";

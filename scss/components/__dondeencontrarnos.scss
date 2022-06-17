@@ -1,0 +1,49 @@
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.aplicandoGrids2 iframe {
+    grid-area: mapamedio;
+    width: 100% !important;
+}
+
+.backIndex {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    grid-area: volverindex;
+}
+
+.comoLlegar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    grid-area: comollego;
+
+}
+
+.lineasCole{
+    grid-area: lineacolectivo;
+    color: white;
+}
+    
+.aplicandoGrids2{
+    padding: 0 4rem;
+    display: grid;
+    box-sizing: 3rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "mapamedio comollego"
+    "mapamedio lineacolectivo"
+    "mapamedio volverindex"
+    ;
+}
+
