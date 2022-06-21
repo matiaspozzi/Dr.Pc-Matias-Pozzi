@@ -1,6 +1,5 @@
 .bodyContacto{
     color: map-get($mapscontacto, colorBlanco );
-    padding: 0 4rem;
     font-family: $FontFam2;
     
 }
@@ -9,6 +8,7 @@
 }
 .navBar-modificada{
     color: map-get($mapscontacto, colorBlanco );
+    padding: 0 4rem;
 
 }
 
@@ -156,12 +156,7 @@ font-family: 'Cormorant Garamond', serif;
 font-weight: 300;
 }
 
-
-@media screen and (max-width: 860px) {
-
-    .bodyContacto {
-        padding: 0px 40px 40px 40px;
-    }
+@media screen and (max-width: 768px) {
 
     .contentOfContent {
         grid-template-columns: 1fr;
@@ -172,8 +167,15 @@ font-weight: 300;
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
       }
       
+}
+@media screen and (max-width: 480px) {
 
+    .contentOfContent {
+        grid-template-columns: 1fr;
+ 
+     }
 
-
-
+     .togglerArreglado {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 }
